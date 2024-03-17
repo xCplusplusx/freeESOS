@@ -1,20 +1,37 @@
 #include <driver.h>
+#include <define.h>
+
+
 
 
 void check_registers(){
 
-    asm("LDI r0, 0xFF");
-    asm("MOV r1, r0");
-    asm("MOV r2, r1");
-    asm("MOV r3, r2");
-    asm("MOV r4, r3");
-    asm("MOV r5, r4");
-    asm("MOV r6, r5");
-    asm("MOV r7, r6");
-    asm("MOV r8, r7");
-    asm("MOV r9, r8");
-    asm("MOV r10, r9");
+    asm("SER r16");
+    asm("MOV r17, r16");
+    asm("MOV r18, r17");
+    asm("MOV r19, r18");
+    asm("MOV r20, r19");
+    asm("MOV r21, r20");
+    asm("MOV r22, r21");
+    asm("MOV r23, r22");
+    asm("MOV r24, r23");
+    asm("MOV r25, r24");
+    asm("MOV r26, r25");
+    asm("MOV r27, r26");
+    asm("MOV r28, r27");
+    asm("MOV r29, r27");
+    asm("MOV r30, r29");
+    asm("MOV r31, r30");
+    asm("CPSE r16, r31");
+    asm("JMP 0x00"); // Springt zum Anfang zurück
+}
 
+
+
+void set_PORTB(char *Bitmask, char *setup){
+    
+
+	if(setup = INPUT)
 
 
 }

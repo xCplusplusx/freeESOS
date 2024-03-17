@@ -1,14 +1,11 @@
-#include "freeOS.h"
-//#include <driver.h>
+#include <freeOS.h>
+#include <stdint.h> //For uint8_t ... datatyp
+#include <driver.h>
 
 
-
-void boot(uint8_t A){
+void boot(){
 
     init_OS();
-
-
-
 
 }
 
@@ -17,16 +14,13 @@ void Scheduler(){
 
     init_OS();
 
-
-
 }
 
 
 void init_OS(){
 
-    //check_registers();
-    //
-
+    check_registers();
+    //read_setup();
 
 }
 
