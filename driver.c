@@ -1,8 +1,5 @@
-#include <driver.h>
-#include <define.h>
-
-
-
+#include "driver.h"
+#include "define.h"
 
 void check_registers(){
 
@@ -28,10 +25,20 @@ void check_registers(){
 
 
 
-void set_PORTB(char *Bitmask, char *setup){
-    
-
-	if(setup = INPUT)
-
+void set_PORTB(Port portB, uchar setup){
+		
+	switch (setup)
+	{
+		case INPUT:
+		break;
+		case OUTPUT:
+		break;
+		case PU_INPUT:
+			
+		break; 
+		default:
+			return;
+	}
+	
 
 }

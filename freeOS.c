@@ -1,5 +1,4 @@
 #include <freeOS.h>
-#include <stdint.h> //For uint8_t ... datatyp
 #include <driver.h>
 
 

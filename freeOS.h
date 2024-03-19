@@ -1,7 +1,8 @@
-
 #ifndef OS
 
 #define OS
+
+#include <driver.h>
 
 void boot();
 void scheduler();
