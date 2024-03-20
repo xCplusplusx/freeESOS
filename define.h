@@ -9,9 +9,13 @@ typedef long long int64;
 
 #ifdef DRIVER
 
+//For the Ports 
 #define INPUT (uchar) 0
-#define OUTPUT (uchar) 1
-#define PU_INPUT (uchar) 2
+#define OUTPUT (uchar) 2
+#define PULLUP_INPUT (uchar) 1
+
+#define LOW (uchar) 0
+#define HIGH (uchar) 1
 
 #endif
 

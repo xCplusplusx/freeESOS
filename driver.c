@@ -25,20 +25,7 @@ void check_registers(){
 
 
 
-void set_PORTB(Port portB, uchar setup){
-		
-	switch (setup)
-	{
-		case INPUT:
-		break;
-		case OUTPUT:
-		break;
-		case PU_INPUT:
-			
-		break; 
-		default:
-			return;
-	}
+void setup_PORTB(Port * portB){
 	
-
+	
 }
